@@ -43,9 +43,38 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: @header-height;
+
+  .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: @tools-height;
+    // position: fixed;
+    width: 100%;
+    margin-bottom: 8px;
+
+    // background-color: burlywood;
+
+    border: 1px lightblue solid;
+    
+    .btn {
+      height: 32px;
+      width: 33%;
+      color: red;
+      font-size: 2rem;
+      border: 1px solid gray;
+      background-color: blueviolet;
+    }
+  }
+
 
   @media @mobile {
     width: 90%;
     margin: 0 5%;
   }
+
+
+
 }
